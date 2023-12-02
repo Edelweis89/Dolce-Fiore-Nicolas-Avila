@@ -1,13 +1,16 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
 import "./App.css";
+import ItemListContainer from "./componentes/ItemListContainer";
+import NavBar from "./componentes/NavBar/NavBar";
 
 function App() {
   return (
     <>
-      <h1>Dolce Fiore </h1>
-      <h2>Pasteleria y Chocolateria</h2>
+      <NavBar />
+      <div className="div-principal">
+        <h1>Dolce Fiore </h1>
+        <h2>Pasteleria y Chocolateria</h2>
+        <ItemListContainer saludo="Bienvenidos a su momento mas Dulce" />
+      </div>
     </>
   );
 }
