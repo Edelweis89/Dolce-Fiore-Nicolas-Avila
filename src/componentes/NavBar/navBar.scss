@@ -1,7 +1,13 @@
 /* estilos de menu drop */
-.offcanvas-body {
-  background-color: #cc9227;
-  color: #fdfdfd;
+.navbar navbar-expand-lg navbar-dark bg-dark {
+  .container-fluid {
+    display: flex;
+    justify-content: space-between;
+
+    .navbar-brand {
+      margin: 4rem;
+    }
+  }
 }
 
 .carrito {
@@ -10,6 +16,15 @@
   align-items: center;
   align-content: center;
   background-color: transparent;
-  width: 4rem;
-  height: auto;
+  width: 2rem;
+  height: 2rem;
+}
+.logo {
+  width: 3rem;
+  height: 3rem;
+  -webkit-border-radius: 5%;
+  -moz-border-radius: 5%;
+  -ms-border-radius: 5%;
+  -o-border-radius: 5%;
+  border-radius: 5%;
 }

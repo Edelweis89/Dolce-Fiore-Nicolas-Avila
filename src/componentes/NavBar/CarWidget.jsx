@@ -1,9 +1,9 @@
-import { BsCartCheckFill } from "react-icons/bs";
+import { BsCartXFill } from "react-icons/bs";
 
 const CarWidget = () => {
   return (
     <div className="carrito">
-      <BsCartCheckFill />
+      <BsCartXFill />
       <p>1</p>
     </div>
   );
