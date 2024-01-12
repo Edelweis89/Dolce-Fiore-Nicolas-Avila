@@ -1,10 +1,10 @@
 import { useEffect } from "react";
 import { useState } from "react";
 import ItemDetail from "../ItemDetail/ItemDetail";
-import obtenerProductos from "../utilidades/data";
+import { doc, getDoc } from "firebase/firestore";
 import { useParams } from "react-router-dom";
 import "../ItemDetailContainer/ItemDetailContainer.css";
-("../utilidades/data");
+import db from "../../db/db";
 
 const ItemdetailContainer = () => {
   const [producto, setProducto] = useState({});
@@ -12,13 +12,12 @@ const ItemdetailContainer = () => {
 
   console.log(id);
   useEffect(() => {
-    obtenerProductos.then((respuesta) => {
-      const productoEncontrado = respuesta.find(
-        (prod) => prod.id === Number(id)
-      );
-      setProducto(productoEncontrado);
+    const productoRef = doc(db, "products", id);
+    getDoc(productoRef).then((respuesta) => {
+      const productoDb = { id: respuesta.id, ...respuesta.data() };
+      setProducto(productoDb);
     });
-  }, []);
+  }, [id]);
 
   return (
     <div className="detalleProd">{<ItemDetail producto={producto} />}</div>

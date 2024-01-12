@@ -1,0 +1,211 @@
+/* Media queries para dispositivos móviles */
+@media (max-width: 767px) {
+  .CarritoCompra {
+    display: flex;
+    height: auto;
+    gap: 2rem;
+    margin: 3rem;
+    font-size: 1.5rem;
+    color: white;
+    background-color: #353535;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .tituloCar {
+      text-align: center;
+      margin-top: 2rem;
+    }
+
+    .listaCompra {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      padding: 1.5rem;
+      border: black;
+
+      border-radius: 8px;
+      background-color: #000000;
+      box-shadow: rgba(99, 99, 99, 0 0.2) 0px 4px 6px -2px;
+      li {
+        width: 100%;
+        padding: 1rem;
+        border: black;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: aliceblue;
+        color: #000000;
+        border-radius: 8px;
+        margin: 2rem;
+        font-size: 1rem;
+      }
+    }
+    .imgCarrito {
+      width: 80%;
+      height: auto;
+    }
+  }
+  .carritoVacio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    color: #000000;
+    margin: 2rem;
+    width: 90%;
+    height: 100vh;
+  }
+  .delete {
+    display: block;
+    background-color: #000000;
+    color: white;
+    margin-bottom: 3rem;
+  }
+}
+
+/* Media queries para tablets */
+@media (min-width: 768px) and (max-width: 991px) {
+  .CarritoCompra {
+    display: flex;
+    height: auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 3rem;
+    font-size: 1rem;
+    color: white;
+    background-color: #353535;
+    gap: 2rem;
+    .tituloCar {
+      text-align: center;
+    }
+
+    .listaCompra {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      padding: 1.5rem;
+      border: black;
+
+      border-radius: 8px;
+      background-color: #000000;
+      box-shadow: rgba(99, 99, 99, 0 0.2) 0px 4px 6px -2px;
+      li {
+        width: 100%;
+        padding: 1rem;
+        border: black;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: aliceblue;
+        color: #000000;
+        border-radius: 8px;
+        margin: 2rem;
+        font-size: 1rem;
+      }
+    }
+    .imgCarrito {
+      width: 40%;
+      height: auto;
+    }
+  }
+  .carritoVacio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    color: #000000;
+    margin: 2rem;
+    width: 90%;
+    height: 100vh;
+  }
+  .delete {
+    display: block;
+    background-color: #000000;
+    color: white;
+    margin-bottom: 3rem;
+  }
+}
+
+/* Media queries para computadoras de escritorio */
+@media (min-width: 992px) {
+  .CarritoCompra {
+    width: 100%;
+    display: flex;
+    height: auto;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 4rem;
+    font-size: 1.5rem;
+    color: white;
+    background-color: #353535;
+
+    .tituloCar {
+      text-align: center;
+      margin-top: 3rem;
+    }
+
+    .listaCompra {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      width: 90%;
+      margin: 2rem;
+
+      padding: 1.5rem;
+      border: 2px rgb(2, 100, 247);
+
+      border-radius: 8px;
+      background-color: #000000;
+      box-shadow: rgba(99, 99, 99, 0 0.2) 0px 4px 6px -2px;
+      li {
+        width: 30%;
+        padding: 1rem;
+        border: rgb(2, 116, 247);
+        color: rgb(0, 0, 0);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #edf2f4;
+        border-radius: 8px;
+        margin: 2rem;
+
+        font-size: 1rem;
+      }
+    }
+    .imgCarrito {
+      width: 20%;
+      height: auto;
+      margin-bottom: 3rem;
+    }
+  }
+  .carritoVacio {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    color: #000000;
+    margin: 2rem;
+    width: 90%;
+    height: 90%;
+  }
+
+  .delete {
+    display: block;
+    background-color: #000000;
+    color: white;
+    margin-bottom: 3rem;
+  }
+}

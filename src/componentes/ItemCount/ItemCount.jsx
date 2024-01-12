@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "../ItemCount/Itemcount.css";
 
-const ItemCount = ({ stock }) => {
+const ItemCount = ({ stock, agregarAlCarrito }) => {
   // hook de estado : useState
 
   const [contador, setContador] = useState(1);
@@ -25,16 +25,16 @@ const ItemCount = ({ stock }) => {
         {" "}
         +
       </button>
-      <p>amount: {contador}</p>
+      <p className="contCant"> {contador}</p>
       <button className="btnCount" onClick={restar}>
         {" "}
         -
       </button>
-      <button className="btnCount">Add to Cart </button>
+      <button onClick={() => agregarAlCarrito(contador)} className="btnCount">
+        Add to Cart{" "}
+      </button>
     </div>
   );
 };
 
 export default ItemCount;
-
-/// falta agregar el estilo css al componente ItemCount.

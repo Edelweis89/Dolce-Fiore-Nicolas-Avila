@@ -1,0 +1,48 @@
+/* estilos de menu drop */
+.navbar navbar navbar-expand-lg {
+  .container-fluid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+.navbar-brand {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+navbar-nav {
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+
+.carrito {
+  background-color: rgb(255, 255, 255);
+  width: 2rem;
+  height: 2rem;
+  margin: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  -webkit-border-radius: 25%;
+  -moz-border-radius: 25%;
+  -ms-border-radius: 25%;
+  -o-border-radius: 25%;
+  border-radius: 25%;
+}
+.logo {
+  width: 3rem;
+  height: 3rem;
+  -webkit-border-radius: 15%;
+  -moz-border-radius: 15%;
+  -ms-border-radius: 15%;
+  -o-border-radius: 15%;
+  border-radius: 15%;
+}
+
+#navbarNav {
+  margin: 1rem;
+}
