@@ -1,7 +1,9 @@
 import { useContext } from "react";
-import { CartContext } from "../../context/CartContext";
-import "../Carrito/Carrito.css";
 import { Link } from "react-router-dom";
+
+import { CartContext } from "../../context/CartContext";
+
+import "../Carrito/Carrito.css";
 
 const Carrito = () => {
   const { carrito, borrarCarrito, totalPrecio, borrarProducto } =
@@ -9,8 +11,8 @@ const Carrito = () => {
   if (carrito.length === 0) {
     return (
       <div className="carritoVacio">
-        <h2> Opps, el carrito esta vacio 😢</h2>
-        <Link to="/">Volver al Inicio</Link>
+        <h2>Opps, the cart is empty 😢</h2>
+        <Link to="/">Back to Home🏠</Link>
       </div>
     );
   }
@@ -27,22 +29,22 @@ const Carrito = () => {
               alt={producto.nombre}
             />
             <p>{producto.nombre}</p>
-            <p>Cantidad: {producto.cantidad}</p>
-            <p>Precio por unidad: {producto.precio}</p>
+            <p>Amount: {producto.cantidad}</p>
+            <p>Price by unit: {producto.precio}</p>
 
             <button
               className="delete"
               onClick={() => borrarProducto(producto.id)}
             >
-              Eliminar producto
+              Delete product
             </button>
           </li>
         ))}
       </ul>
-      <p>Total a pagar: ${totalPrecio()}</p>
-      <Link to="/checkout">Finalizar mi compra 😍</Link>
+      <p>Total to pay: ${totalPrecio()}</p>
+      <Link to="/checkout">Confirm purchase 😍 😍</Link>
       <button className="delete" onClick={borrarCarrito}>
-        Eliminar Carrito
+        Delete Cart
       </button>
     </div>
   );

@@ -1,18 +1,17 @@
-import "../Footer/footer.css";
 import { Link } from "react-router-dom";
+
+import "../Footer/footer.css";
 
 const Footer = () => {
   return (
     <div className="footerGlobal">
       <img
         className="logoFooter"
-        src="img/logo.jpg"
+        src="img/logo1.jpg"
         alt="logoManosMundoerror"
       />
 
-      <p className="footerText">
-        © 2023 Nicolas Avila, todos los derechos reservados.
-      </p>
+      <p className="footerText">© 2023 Nicolas Avila, all rights reserved.</p>
 
       <Link to="https://www.facebook.com/NicolasAvila09/">
         <img className="imgFooter" src="img/Fb.png" alt="iraFacebook" />

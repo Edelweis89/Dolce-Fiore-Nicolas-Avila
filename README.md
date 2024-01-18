@@ -1,8 +1,28 @@
-# React + Vite
+# Hola, Mi nombre es Nicolas Avila! 👋
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Ecommerce Five Nights at Freddys
 
-Currently, two official plugins are available:
+Este proyecto es un Ecommerce de Juguetes coleccionables de Five Nights at Freddys, te permite explorar los productos, ver los detalles y filtrar por categorias.
+Tiene integrado un carrito de compras y un checkout para que el usuario nos brinde sus datos de contacto, esta informacion es almacenada en una base de datos.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Instalacion
+
+Instalar mi proyecto con npm
+
+```bash
+  npm install
+  npm run dev
+```
+
+## Dependencias
+
+```bash
+ Firebase
+ react-router-dom
+ react-spinners
+```
+
+## Authors
+
+- [@Edelweis89](https://github.com/Edelweis89)
+- [@nicolas.avila89](https://www.instagram.com/nicolas.avila89/)

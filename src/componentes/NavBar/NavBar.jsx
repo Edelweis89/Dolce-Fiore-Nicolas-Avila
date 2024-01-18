@@ -1,22 +1,24 @@
-import CarWidget from "./CarWidget";
-import "../NavBar/navBar.css";
 import { Link } from "react-router-dom";
+
+import CarWidget from "./CarWidget";
+
+import "../NavBar/navBar.css";
 
 const NavBar = () => {
   return (
-    <nav className="navbar navbar-expand-lg bg-black" data-bs-theme="light">
+    <nav className="navbar navbar-expand-lg  bg-black" data-bs-theme="light">
       <div className="container-fluid">
         <Link className="navbar-brand" to="/">
           {" "}
           <img
             className="logo"
-            src="img/logo.jpg"
+            src="img/logo1.jpg"
             alt="Five Nights at Freddy's"
           />
         </Link>
 
         <button
-          className="navbar-toggler bg-white "
+          className="navbar-toggler bg-primary "
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarNav"
@@ -34,7 +36,7 @@ const NavBar = () => {
                 aria-current="page"
                 to="/productos"
               >
-                Productos
+                Products
               </Link>
             </li>
             <li className="nav-item">
@@ -43,12 +45,12 @@ const NavBar = () => {
                 aria-current="page"
                 to="/categoria/funko"
               >
-                Categoria Funkos
+                Category Funkos
               </Link>
             </li>
             <li class="nav-item">
               <Link className="nav-link link-light" to="/categoria/Set">
-                Categoria Sets
+                Category Sets
               </Link>
             </li>
           </ul>

@@ -7,7 +7,7 @@
     margin: 3rem;
     font-size: 1.5rem;
     color: white;
-    background-color: #353535;
+    background-color: #000000;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
@@ -27,7 +27,7 @@
       border: black;
 
       border-radius: 8px;
-      background-color: #000000;
+      background-color: #1b1a22;
       box-shadow: rgba(99, 99, 99, 0 0.2) 0px 4px 6px -2px;
       li {
         width: 100%;
@@ -50,14 +50,27 @@
     }
   }
   .carritoVacio {
+    width: 100%;
+    height: 100%;
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    flex-direction: row;
     color: #000000;
-    margin: 2rem;
-    width: 90%;
-    height: 100vh;
+
+    h2 {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      text-align: center;
+      font-family: "Roboto", sans-serif;
+      font-weight: bold;
+
+      font-size: 3rem;
+    }
   }
   .delete {
     display: block;
@@ -78,10 +91,11 @@
     margin: 3rem;
     font-size: 1rem;
     color: white;
-    background-color: #353535;
+    background-color: #000000;
     gap: 2rem;
     .tituloCar {
       text-align: center;
+      margin-top: 3rem;
     }
 
     .listaCompra {
@@ -94,7 +108,7 @@
       border: black;
 
       border-radius: 8px;
-      background-color: #000000;
+      background-color: #1b1a22;
       box-shadow: rgba(99, 99, 99, 0 0.2) 0px 4px 6px -2px;
       li {
         width: 100%;
@@ -114,17 +128,31 @@
     .imgCarrito {
       width: 40%;
       height: auto;
+      border: 2px, #000000;
     }
   }
   .carritoVacio {
+    width: 100%;
+    height: 100%;
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    flex-direction: row;
     color: #000000;
-    margin: 2rem;
-    width: 90%;
-    height: 100vh;
+
+    h2 {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      text-align: center;
+      font-family: "Roboto", sans-serif;
+      font-weight: bold;
+
+      font-size: 3rem;
+    }
   }
   .delete {
     display: block;
@@ -138,15 +166,19 @@
 @media (min-width: 992px) {
   .CarritoCompra {
     width: 100%;
-    display: flex;
     height: auto;
-    justify-content: center;
+    display: flex;
+
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+
     gap: 4rem;
     font-size: 1.5rem;
-    color: white;
-    background-color: #353535;
+    color: rgb(0, 0, 0);
+    background-color: #ffffff;
+    margin-bottom: 4rem;
 
     .tituloCar {
       text-align: center;
@@ -160,13 +192,14 @@
       justify-content: center;
       align-items: center;
       width: 90%;
+
       margin: 2rem;
 
       padding: 1.5rem;
       border: 2px rgb(2, 100, 247);
 
       border-radius: 8px;
-      background-color: #000000;
+      background-color: #1b1a22;
       box-shadow: rgba(99, 99, 99, 0 0.2) 0px 4px 6px -2px;
       li {
         width: 30%;
@@ -191,21 +224,33 @@
     }
   }
   .carritoVacio {
+    width: 100%;
+    height: 100%;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     color: #000000;
-    margin: 2rem;
-    width: 90%;
-    height: 90%;
+
+    h2 {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      text-align: center;
+      font-family: "Roboto", sans-serif;
+      font-weight: bold;
+
+      font-size: 3rem;
+    }
   }
 
   .delete {
-    display: block;
     background-color: #000000;
     color: white;
     margin-bottom: 3rem;
+    height: 3rem;
   }
 }

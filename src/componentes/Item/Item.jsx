@@ -9,11 +9,11 @@ const Item = ({ producto }) => {
       <img className="imageCards" src={producto.imagen} alt={producto.nombre} />
       <div className="card-body">
         <p className="textCards"> Item Collectible : {producto.nombre}</p>
-        <p className="textCards">Precio: $ {producto.precio}</p>
+        <p className="textCards">Price: $ {producto.precio}</p>
         <p className="textCards">Stock: {producto.stock}</p>
 
         <Link to={`/detalle/${producto.id}`} className="link">
-          Ver detalles
+          More Details
         </Link>
       </div>
     </div>

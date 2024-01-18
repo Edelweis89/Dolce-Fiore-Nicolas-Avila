@@ -1,12 +1,15 @@
 //obtenemos los productos desde el archivo data en utilidades y los pasamos a ItemList.
 
 import { useEffect, useState } from "react";
-import db from "../../db/db";
 import { PacmanLoader } from "react-spinners";
-import ItemList from "../ItemList/itemList";
-import "../ItemListContainer/ItemListContainer.css";
 import { useParams } from "react-router-dom";
+
+import db from "../../db/db";
+import ItemList from "../ItemList/itemList";
+
 import { collection, getDocs, query, where } from "firebase/firestore";
+
+import "../ItemListContainer/ItemListContainer.css";
 
 const ItemListContainer = ({ saludo }) => {
   const [productos, setProductos] = useState([]);
@@ -43,7 +46,7 @@ const ItemListContainer = ({ saludo }) => {
     <>
       {cargando ? (
         <div className="cargando">
-          <PacmanLoader color="#36d7b7" />
+          <PacmanLoader />
         </div>
       ) : (
         <div className="itemListContainer">

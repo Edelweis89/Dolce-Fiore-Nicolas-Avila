@@ -20,14 +20,14 @@ const ItemDetail = ({ producto }) => {
       <div className="texto">
         <h2>{producto.nombre}</h2>
         <p>{producto.descripcion}</p>
-        <p> Precio por Unidad: ${producto.precio}</p>
+        <p>Price by unit: ${producto.precio}</p>
         {toggle ? (
           <>
             <Link className="btnCount" to="/carrito">
-              Terminar mi compra
+              Finish my purchase
             </Link>
             <Link className="btnCount" to="/">
-              Seguir comprando
+              Keep buying
             </Link>
           </>
         ) : (

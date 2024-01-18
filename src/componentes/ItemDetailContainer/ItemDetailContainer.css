@@ -13,16 +13,16 @@
       margin-right: 2rem;
       margin-top: 5rem;
       margin-bottom: 5rem;
-      background-color: #000000;
+      background-color: #1b1a22;
       width: 100%;
       height: auto;
       color: white;
-      box-shadow: 0 1px 1px #41ead4;
+      box-shadow: 0 1px 1px #000000;
       justify-content: center;
       -webkit-animation: 2s anim-lineUp ease-out;
       animation: 2s anim-lineUp ease-out;
       &:hover {
-        box-shadow: 0 20px 20px #41ead4;
+        box-shadow: 0 20px 20px #0071e3;
         -webkit-transform: translateY(-10px) scale(1.02);
         -moz-transform: translateY(-10px) scale(1.02);
         -ms-transform: translateY(-10px) scale(1.02);
@@ -60,7 +60,7 @@
         align-self: center;
         margin-bottom: 4rem;
         color: #e0fbfc;
-        background-color: #323031;
+        background-color: #0071e3;
         gap: 1rem;
         -webkit-border-radius: 15%;
         -moz-border-radius: 15%;
@@ -80,7 +80,7 @@
         }
         .btnCount:hover {
           cursor: pointer;
-          background-color: #41ead4;
+          background-color: #0071e3;
           color: #000000;
         }
       }
@@ -103,7 +103,8 @@
       width: 90%;
       margin: 5rem;
       height: auto;
-      box-shadow: 0 1px 1px #41ead4;
+      background-color: #1b1a22;
+      box-shadow: 0 1px 1px #000000;
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
@@ -113,7 +114,7 @@
       -webkit-animation: 2s anim-lineUp ease-out;
       animation: 2s anim-lineUp ease-out;
       &:hover {
-        box-shadow: 0 20px 20px #41ead4;
+        box-shadow: 0 20px 20px #0071e3;
         -webkit-transform: translateY(-10px) scale(1.02);
         -moz-transform: translateY(-10px) scale(1.02);
         -ms-transform: translateY(-10px) scale(1.02);
@@ -174,7 +175,7 @@
         }
         .btnCount:hover {
           cursor: pointer;
-          background-color: #41ead4;
+          background-color: #0071e3;
           color: #000000;
         }
       }
@@ -186,6 +187,7 @@
 @media (min-width: 992px) {
   .detalleProd {
     width: 100%;
+    height: auto;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -194,7 +196,7 @@
 
     div {
       margin: 5rem;
-      background-color: #000000;
+      background-color: #1b1a22;
       color: white;
       display: flex;
       flex-direction: row;
@@ -204,12 +206,12 @@
       align-self: center;
       width: 100%;
       height: auto;
-      box-shadow: 0 1px 1px #41ead4;
+      box-shadow: 0 1px 1px #0071e3;
 
       -webkit-animation: 2s anim-lineUp ease-out;
       animation: 2s anim-lineUp ease-out;
       &:hover {
-        box-shadow: 0 20px 20px #41ead4;
+        box-shadow: 0 20px 20px #0071e3;
         -webkit-transform: translateY(-10px) scale(1.02);
         -moz-transform: translateY(-10px) scale(1.02);
         -ms-transform: translateY(-10px) scale(1.02);
@@ -237,13 +239,13 @@
         }
 
         p {
-          width: 100%;
+          width: 80%;
           margin: 4rem;
         }
       }
 
       .Contador {
-        width: 100%;
+        width: 90%;
         height: 5rem;
         display: flex;
         flex-direction: row;
@@ -251,7 +253,7 @@
         justify-content: center;
         margin: 4rem;
         color: #e0fbfc;
-        background-color: #323031;
+        background-color: #0071e3;
 
         -webkit-border-radius: 15%;
         -moz-border-radius: 15%;
@@ -260,7 +262,7 @@
         border-radius: 15%;
         .btnCount {
           background-color: rgb(17, 17, 17);
-          color: #e0fbfc;
+          color: #ffffff;
         }
         .contCant {
           font-size: 1rem;
@@ -268,8 +270,8 @@
         }
         .btnCount:hover {
           cursor: pointer;
-          background-color: #41ead4;
-          color: #000000;
+          background-color: #000000;
+          color: #ffffff;
         }
       }
     }

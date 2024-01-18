@@ -1,9 +1,14 @@
 import { useContext, useState } from "react";
+import { Link } from "react-router-dom";
+import Toastify from "toastify-js";
+
+// Contexts
 import Form from "./Form";
 import { CartContext } from "../../context/CartContext";
 import { addDoc, collection } from "firebase/firestore";
+
 import db from "../../db/db";
-import { Link } from "react-router-dom";
+
 import "./Checkout.css";
 
 const Checkout = () => {
@@ -11,6 +16,7 @@ const Checkout = () => {
     nombre: "",
     telefono: "",
     email: "",
+    emailConfirm: "",
   });
 
   const [idOrden, setidOrden] = useState(null);
@@ -23,12 +29,21 @@ const Checkout = () => {
   const enviarOrden = (event) => {
     event.preventDefault();
 
-    const orden = {
-      comprador: { ...datosForm },
-      productos: [...carrito],
-      total: totalPrecio(),
-    };
-    subirOrden(orden);
+    if (datosForm.email === datosForm.emailConfirm) {
+      const orden = {
+        comprador: { ...datosForm },
+        productos: [...carrito],
+        fecha: new Date(),
+        total: totalPrecio(),
+      };
+      subirOrden(orden);
+    } else {
+      Toastify({
+        text: "The Emails entered do not match!",
+
+        duration: 3000,
+      }).showToast();
+    }
   };
 
   const subirOrden = (orden) => {
@@ -43,9 +58,9 @@ const Checkout = () => {
   return (
     <div className="checkout">
       {idOrden ? (
-        <div>
-          <h2>Orden Generada con Exito 👍</h2>
-          <p> El Codigo de Seguimiento de tu Pedido es: {idOrden} 🫡</p>
+        <div className="ordenOk">
+          <h2>Successfully Generated Order 👍</h2>
+          <p>The Tracking Code for your Order is: {idOrden} 🫡</p>
         </div>
       ) : (
         <Form
@@ -56,7 +71,7 @@ const Checkout = () => {
       )}
 
       <Link className="backInicio" to="/">
-        {" Volver al Inicio "}
+        {" Return to Home "}
         🏠
       </Link>
     </div>
