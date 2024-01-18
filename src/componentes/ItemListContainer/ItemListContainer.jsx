@@ -9,7 +9,7 @@ import ItemList from "../ItemList/itemList";
 
 import { collection, getDocs, query, where } from "firebase/firestore";
 
-import "../ItemListContainer/ItemListContainer.css";
+import "./ItemListContainer.css";
 
 const ItemListContainer = ({ saludo }) => {
   const [productos, setProductos] = useState([]);
