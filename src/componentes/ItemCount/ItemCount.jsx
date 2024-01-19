@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "../ItemCount/Itemcount.css";
+import "./itemcount.css";
 
 const ItemCount = ({ stock, agregarAlCarrito }) => {
   // hook de estado : useState

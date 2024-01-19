@@ -2,7 +2,7 @@ import { useContext, useState } from "react";
 import { Link } from "react-router-dom";
 import ItemCount from "../ItemCount/ItemCount";
 import { CartContext } from "../../context/CartContext";
-import "../ItemDetail/ItemDetail.css";
+import "./ItemDetail.css";
 
 const ItemDetail = ({ producto }) => {
   const [toggle, setToggle] = useState(false);

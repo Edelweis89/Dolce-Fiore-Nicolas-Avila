@@ -1,7 +1,7 @@
 // El componente Item se encarga de la vista de cada card del producto por separado.
 
 import { Link } from "react-router-dom";
-import "../Item/Item.css";
+import "./Item.css";
 
 const Item = ({ producto }) => {
   return (

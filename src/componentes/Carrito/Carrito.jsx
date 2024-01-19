@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 import { CartContext } from "../../context/CartContext";
 
-import "../Carrito/Carrito.css";
+import "./Carrito.css";
 
 const Carrito = () => {
   const { carrito, borrarCarrito, totalPrecio, borrarProducto } =

@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 import CarWidget from "./CarWidget";
 
-import "../NavBar/navBar.css";
+import "./navBar.css";
 
 const NavBar = () => {
   return (

@@ -1,7 +1,7 @@
 //Agrupador de un set de Componentes. ItemList Mapea cada producto por separado y se lo pasa al componente Item.
 
 import Item from "../Item/Item";
-import "../ItemList/itemList.css";
+import "./itemList.css";
 
 const ItemList = ({ productos }) => {
   return (
